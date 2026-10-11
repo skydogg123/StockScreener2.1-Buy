@@ -195,7 +195,7 @@ def build_report(results):
         for r in errors:
             lines.append(f"  {r['symbol']}: {r['error']}")
 
-    subject = f"Stock screen {datetime.now(timezone.utc):%Y-%m-%d} — {len(fired)} fired"
+    subject = f"Buy 12,26,9 Stock screen {datetime.now(timezone.utc):%Y-%m-%d} — {len(fired)} fired"
     return subject, "\n".join(lines)
 
 
